@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Saneamento Além da Rede — plataforma de divulgação científica e extensão universitária da UFABC sobre tecnologias sociais de saneamento: banheiro seco compostável, tratamento de água com Moringa oleifera e educação comunitária." />
+  <meta name="author" content="Projeto de Extensão UFABC — Bacharelado em Ciência e Tecnologia" />
+  <meta name="theme-color" content="#1995AD" />
+  <title>Saneamento Além da Rede — Tecnologias Sociais | UFABC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- =========================================================
+       ACESSIBILIDADE: link para pular direto ao conteúdo
+  ========================================================== -->
+  <a class="skip-link" href="#inicio">Pular para o conteúdo principal</a>
+
+  <!-- =========================================================
+       CABEÇALHO / MENU DE NAVEGAÇÃO FIXO
+  ========================================================== -->
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Página inicial — Saneamento Além da Rede">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="40" height="40" role="img" aria-label="Logotipo: gota d'água com folha">
+            <circle cx="24" cy="24" r="23" fill="#1995AD"/>
+            <path d="M24 9c6 8 11 13 11 20a11 11 0 0 1-22 0c0-7 5-12 11-20z" fill="#F5F7F9"/>
+            <path d="M24 30c-2-4 0-8 5-10-1 5-2 8-5 10z" fill="#4E944F"/>
+            <circle cx="20" cy="24" r="2.4" fill="#FFD200"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>Saneamento Além da Rede</strong>
+          <small>Tecnologias Sociais · UFABC</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Menu principal">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menu de navegação">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#problema">O Problema</a></li>
+          <li><a href="#tecnologias">Tecnologias</a></li>
+          <li><a href="#impacto">Impacto Social</a></li>
+          <li><a href="#extensao">Extensão UFABC</a></li>
+          <li><a href="#biblioteca">Biblioteca</a></li>
+          <li><a href="#contato" class="nav-cta">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         SEÇÃO HOME / HERO
+    ========================================================== -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Projeto de Extensão e Divulgação Científica · UFABC
+          </span>
+          <h1>Soluções Alternativas de Saneamento para Transformar Realidades</h1>
+          <p class="hero-lead">
+            A ciência produz conhecimento. A extensão leva esse conhecimento para onde ele gera impacto.
+          </p>
+          <div class="hero-actions">
+            <a href="#tecnologias" class="btn btn-primary">Conhecer o Projeto</a>
+            <a href="#biblioteca" class="btn btn-ghost">Baixar Materiais</a>
+          </div>
+          <p class="hero-mission">
+            <strong>Tecnologias sociais de saneamento podem transformar comunidades</strong>
+            quando conhecimento científico e extensão universitária caminham juntos.
+          </p>
+        </div>
+
+        <!-- Ilustração conceitual abstrata (SVG inline, sem fotos de pessoas) -->
+        <div class="hero-art reveal" aria-hidden="true">
+          <svg viewBox="0 0 420 420" width="100%" height="100%" role="img" aria-label="Ilustração abstrata de água, comunidade e sustentabilidade">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#1995AD"/>
+                <stop offset="1" stop-color="#4E944F"/>
+              </linearGradient>
+              <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#FFD200"/>
+                <stop offset="1" stop-color="#4E944F"/>
+              </linearGradient>
+            </defs>
+            <circle cx="210" cy="210" r="190" fill="url(#g1)" opacity="0.12"/>
+            <circle cx="210" cy="210" r="150" fill="url(#g1)" opacity="0.15"/>
+            <path d="M210 70c40 55 72 90 72 135a72 72 0 0 1-144 0c0-45 32-80 72-135z" fill="url(#g1)"/>
+            <path d="M210 205c-14-24 4-52 34-64-6 34-14 52-34 64z" fill="#F5F7F9" opacity="0.85"/>
+            <circle cx="170" cy="205" r="14" fill="#FFD200"/>
+            <g opacity="0.9">
+              <rect x="120" y="300" width="40" height="46" rx="5" fill="url(#g2)"/>
+              <rect x="190" y="288" width="40" height="58" rx="5" fill="#F5F7F9"/>
+              <rect x="260" y="308" width="40" height="38" rx="5" fill="url(#g2)"/>
+            </g>
+            <path d="M60 360c40-16 80-16 120 0s80 16 120 0 60-8 60-8" fill="none" stroke="#F5F7F9" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Cartões dos pilares -->
+      <div class="container pillars">
+        <article class="pillar reveal">
+          <span class="pillar-icon" aria-hidden="true">🩺</span>
+          <h3>Saúde pública</h3>
+          <p>Reduzir doenças de veiculação hídrica e proteger comunidades vulneráveis.</p>
+        </article>
+        <article class="pillar reveal">
+          <span class="pillar-icon" aria-hidden="true">💧</span>
+          <h3>Água e saneamento</h3>
+          <p>Soluções descentralizadas onde a rede convencional não chega.</p>
+        </article>
+        <article class="pillar reveal">
+          <span class="pillar-icon" aria-hidden="true">🌱</span>
+          <h3>Tecnologias sociais</h3>
+          <p>Baixo custo, replicáveis e construídas junto com a comunidade.</p>
+        </article>
+        <article class="pillar reveal">
+          <span class="pillar-icon" aria-hidden="true">🤝</span>
+          <h3>Comunidades sustentáveis</h3>
+          <p>Autonomia local e conhecimento científico traduzido para a prática.</p>
+        </article>
+      </div>
+
+      <!-- Divisor curvo remetendo à água -->
+      <div class="wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64L60,58.7C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,64C1200,53,1320,43,1380,37.3L1440,32L1440,120L0,120Z" fill="#F5F7F9"></path></svg>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO O PROBLEMA
+    ========================================================== -->
+    <section class="section section-light" id="problema">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">O Problema</span>
+          <h2>Saneamento é um direito humano — e ainda falta para milhões</h2>
+          <p class="section-sub">
+            O acesso ao saneamento básico vai muito além da infraestrutura urbana: é pilar de
+            dignidade, saúde e justiça territorial. No Brasil, esse direito ainda é profundamente desigual.
+          </p>
+        </header>
+
+        <div class="problem-grid">
+          <div class="problem-text reveal">
+            <p>
+              A falta de esgotamento sanitário adequado contamina a água e o solo,
+              transformando o ambiente em foco de propagação de doenças. Como consequência,
+              crescem as internações hospitalares e a mortalidade infantil — uma sobrecarga
+              evitável para o sistema público de saúde.
+            </p>
+            <p>
+              Essa realidade atinge com mais força quem vive em <strong>periferias</strong>,
+              <strong>comunidades rurais</strong> e <strong>territórios isolados</strong>. Levar a
+              rede tradicional até esses locais costuma esbarrar em barreiras de topografia,
+              distância e inviabilidade econômica — e essas regiões acabam esquecidas.
+            </p>
+            <p>
+              Mas o maior entrave hoje não é a falta de tecnologia: é a <strong>falta de informação
+              acessível, confiável e aplicável</strong>. As soluções existem e funcionam em testes —
+              o conhecimento é que raramente chega a quem mais precisa.
+            </p>
+            <blockquote class="pull-quote">
+              “O acesso à informação também é infraestrutura.”
+            </blockquote>
+          </div>
+
+          <!-- Cards com números (dados apresentados no projeto) -->
+          <div class="stat-cards reveal">
+            <article class="stat-card">
+              <span class="stat-num" data-count="48" data-suffix=" mi">0</span>
+              <p>de pessoas recorrem a soluções precárias de esgoto no Brasil.</p>
+              <small>Dado apresentado no projeto, com base no Censo IBGE 2022.</small>
+            </article>
+            <article class="stat-card stat-card--accent">
+              <span class="stat-label-big">Periferias · Rural · Isoladas</span>
+              <p>São os territórios mais afetados pela ausência de rede convencional.</p>
+              <small>Contexto descrito na revisão do projeto.</small>
+            </article>
+            <article class="stat-card">
+              <span class="stat-num" data-count="3" data-suffix="">0</span>
+              <p>tecnologias sociais reunidas e traduzidas em linguagem acessível.</p>
+              <small>Banheiro seco, Moringa oleifera e educação comunitária.</small>
+            </article>
+          </div>
+        </div>
+
+        <!-- Representação visual da desigualdade territorial -->
+        <figure class="map-figure reveal">
+          <div class="map-visual" aria-hidden="true">
+            <svg viewBox="0 0 300 320" width="150" height="160" role="img" aria-label="Silhueta estilizada do Brasil">
+              <path d="M150 20c26 4 34 22 52 26 22 5 40-2 46 16 6 16-8 26-4 42 4 14 20 20 16 38-4 16-22 16-26 32-4 18 8 34-6 46-12 10-26-2-40 6-16 9-18 30-36 32-16 2-24-14-40-16-18-2-34 10-46-4-10-12 2-26-4-40-6-14-24-18-24-34 0-18 20-22 22-38 2-14-10-26 0-38 10-12 26-4 38-14 12-10 8-30 26-38 8-4 16-4 22-4z" fill="#1995AD" opacity="0.18"/>
+              <circle cx="120" cy="120" r="8" fill="#4E944F"/>
+              <circle cx="180" cy="150" r="10" fill="#FFD200"/>
+              <circle cx="150" cy="220" r="9" fill="#1995AD"/>
+              <circle cx="200" cy="210" r="6" fill="#4E944F"/>
+              <circle cx="110" cy="200" r="7" fill="#FFD200"/>
+            </svg>
+          </div>
+          <figcaption>
+            <h3>Desigualdade que tem endereço</h3>
+            <p>
+              O déficit de saneamento não se distribui de forma uniforme: concentra-se onde a
+              vulnerabilidade social já é maior. Democratizar a informação é o primeiro passo para
+              reduzir essa distância. <em>(Representação ilustrativa.)</em>
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO TECNOLOGIAS ALTERNATIVAS
+    ========================================================== -->
+    <section class="section" id="tecnologias">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Tecnologias Alternativas</span>
+          <h2>Soluções descentralizadas, sustentáveis e de baixo custo</h2>
+          <p class="section-sub">
+            Tecnologias sociais são produtos e métodos replicáveis, desenvolvidos junto à comunidade,
+            que priorizam simplicidade, insumos locais e apropriação pelos próprios usuários.
+          </p>
+        </header>
+
+        <div class="tech-grid">
+          <!-- CARD 1 -->
+          <article class="tech-card reveal">
+            <div class="tech-icon" aria-hidden="true">🚻</div>
+            <h3>Banheiro Seco Compostável</h3>
+            <ul class="tech-list">
+              <li>Não utiliza água para o transporte de dejetos, reduzindo a pressão sobre os recursos hídricos.</li>
+              <li>Transforma resíduos orgânicos em composto por meio de manejo e desidratação adequados.</li>
+              <li>É uma solução descentralizada, aplicável onde redes convencionais são inviáveis.</li>
+              <li>Evita a geração de efluentes líquidos de difícil tratamento.</li>
+            </ul>
+            <p class="tech-note">
+              ⚠️ A aplicação prática deve seguir orientações técnicas, sanitárias e ambientais adequadas.
+            </p>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="tech-card reveal">
+            <div class="tech-icon" aria-hidden="true">🌿</div>
+            <h3>Tratamento com <em>Moringa oleifera</em></h3>
+            <ul class="tech-list">
+              <li>As sementes possuem proteínas com propriedades coagulantes naturais.</li>
+              <li>Podem auxiliar na remoção de turbidez, cor e impurezas da água.</li>
+              <li>Representam alternativa natural, biodegradável e de baixo custo.</li>
+              <li>São especialmente úteis em processos educativos e soluções de pequena escala.</li>
+            </ul>
+            <p class="tech-note">
+              ⚠️ O uso para consumo humano exige validação técnica, controle de qualidade da água e orientação especializada.
+            </p>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="tech-card reveal">
+            <div class="tech-icon" aria-hidden="true">📚</div>
+            <h3>Educação Comunitária</h3>
+            <ul class="tech-list">
+              <li>A tecnologia só gera impacto quando a informação chega efetivamente às pessoas.</li>
+              <li>Cartilhas, guias ilustrados, oficinas e materiais digitais apoiam ONGs e comunidades.</li>
+              <li>A plataforma traduz conhecimento científico em linguagem acessível.</li>
+              <li>Fortalece a autonomia para operação e manutenção de longo prazo das soluções.</li>
+            </ul>
+            <p class="tech-note tech-note--positive">
+              💡 Informação acessível é o que torna uma tecnologia social realmente replicável.
+            </p>
+          </article>
+        </div>
+
+        <!-- Tabela comparativa -->
+        <div class="table-wrap reveal">
+          <h3 class="table-title">Comparativo entre soluções</h3>
+          <table class="compare-table">
+            <caption class="sr-only">Comparativo entre soluções de saneamento quanto a custo, uso de água, manutenção e potencial de aplicação.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Solução</th>
+                <th scope="col">Custo aproximado</th>
+                <th scope="col">Uso de água</th>
+                <th scope="col">Manutenção</th>
+                <th scope="col">Potencial de aplicação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Sistema convencional (rede)</th>
+                <td>Alto (obra e infraestrutura)</td>
+                <td>Elevado</td>
+                <td>Depende de operadora / rede</td>
+                <td>Áreas urbanas com rede disponível</td>
+              </tr>
+              <tr>
+                <th scope="row">Banheiro seco compostável</th>
+                <td>Baixo a moderado</td>
+                <td>Não utiliza água</td>
+                <td>Manejo periódico dos resíduos</td>
+                <td>Áreas rurais e isoladas, com orientação técnica</td>
+              </tr>
+              <tr>
+                <th scope="row">Tratamento com Moringa</th>
+                <td>Baixo</td>
+                <td>Aplicado ao próprio tratamento</td>
+                <td>Preparo do extrato e monitoramento</td>
+                <td>Pequena escala, com validação de qualidade</td>
+              </tr>
+              <tr>
+                <th scope="row">Educação comunitária</th>
+                <td>Baixo</td>
+                <td>—</td>
+                <td>Atualização de materiais e oficinas</td>
+                <td>Amplo — habilita a replicação das demais soluções</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="table-note">
+            Valores e características apresentados de forma indicativa, com base no material do projeto e nas referências acadêmicas.
+            Resultados variam conforme o contexto local e a orientação técnica aplicada.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO COMO FUNCIONA — JORNADA DA TRANSFORMAÇÃO
+    ========================================================== -->
+    <section class="section section-teal" id="como-funciona">
+      <div class="container">
+        <header class="section-head section-head--light reveal">
+          <span class="eyebrow eyebrow--light">Como Funciona</span>
+          <h2>Jornada da Transformação</h2>
+          <p class="section-sub section-sub--light">
+            Da bancada da universidade até a aplicação real na comunidade — um caminho contínuo de tradução do conhecimento.
+          </p>
+        </header>
+
+        <ol class="journey">
+          <li class="journey-step reveal"><span class="journey-num">1</span><h3>Pesquisa na universidade</h3><p>Produção e revisão do conhecimento científico.</p></li>
+          <li class="journey-step reveal"><span class="journey-num">2</span><h3>Tradução do conhecimento</h3><p>Linguagem simples, ilustrada e confiável.</p></li>
+          <li class="journey-step reveal"><span class="journey-num">3</span><h3>Materiais educativos</h3><p>Cartilhas, guias e conteúdos digitais.</p></li>
+          <li class="journey-step reveal"><span class="journey-num">4</span><h3>Capacitação de multiplicadores</h3><p>ONGs, lideranças e educadores.</p></li>
+          <li class="journey-step reveal"><span class="journey-num">5</span><h3>Aplicação comunitária</h3><p>Uso local com orientação técnica.</p></li>
+          <li class="journey-step reveal"><span class="journey-num">6</span><h3>Impacto social e ambiental</h3><p>Mais saúde, autonomia e sustentabilidade.</p></li>
+        </ol>
+
+        <p class="journey-quote reveal">
+          Da UFABC para a sociedade: conhecimento que se transforma em ação.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO IMPACTO SOCIAL
+    ========================================================== -->
+    <section class="section section-light" id="impacto">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Impacto Social</span>
+          <h2>Benefícios esperados do projeto</h2>
+          <p class="section-sub">
+            A plataforma tem potencial para gerar impacto ao remover barreiras de informação e fortalecer quem já atua nos territórios.
+          </p>
+        </header>
+
+        <div class="impact-grid">
+          <article class="impact-card reveal"><span aria-hidden="true">🔎</span><h3>Acesso à informação</h3><p>Conteúdo científico traduzido em linguagem acessível.</p></article>
+          <article class="impact-card reveal"><span aria-hidden="true">🤝</span><h3>Apoio a ONGs e lideranças</h3><p>Ferramentas para agentes multiplicadores locais.</p></article>
+          <article class="impact-card reveal"><span aria-hidden="true">🌍</span><h3>Autonomia comunitária</h3><p>Capacidade de operar e manter as soluções.</p></article>
+          <article class="impact-card reveal"><span aria-hidden="true">♻️</span><h3>Incentivo à sustentabilidade</h3><p>Tecnologias de baixo custo e baixo impacto.</p></article>
+          <article class="impact-card reveal"><span aria-hidden="true">🧩</span><h3>Redução de barreiras técnicas</h3><p>Passo a passo claro e replicável.</p></article>
+          <article class="impact-card reveal"><span aria-hidden="true">🔬</span><h3>Ciência aplicada</h3><p>Valorização da pesquisa que chega à ponta.</p></article>
+        </div>
+
+    <!-- =========================================================
+         SEÇÃO EXTENSÃO UNIVERSITÁRIA
+    ========================================================== -->
+    <section class="section" id="extensao">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Extensão UFABC</span>
+          <h2>A ponte entre universidade e sociedade</h2>
+          <p class="section-sub">
+            A extensão universitária transforma pesquisa em ação: leva o conhecimento produzido na
+            UFABC para onde ele pode gerar mudança concreta.
+          </p>
+        </header>
+
+        <div class="narrative">
+          <article class="narrative-block reveal"><span class="narrative-step" aria-hidden="true">01</span><h3>O desafio</h3><p>Falta de saneamento somada à falta de informação acessível nos territórios vulneráveis.</p></article>
+          <article class="narrative-block reveal"><span class="narrative-step" aria-hidden="true">02</span><h3>A pesquisa</h3><p>Produção e organização do conhecimento científico sobre as tecnologias sociais.</p></article>
+          <article class="narrative-block reveal"><span class="narrative-step" aria-hidden="true">03</span><h3>A extensão</h3><p>Tradução do conhecimento em materiais acessíveis, oficinas e uma plataforma digital.</p></article>
+          <article class="narrative-block reveal"><span class="narrative-step" aria-hidden="true">04</span><h3>O impacto</h3><p>Comunidades mais informadas, ONGs fortalecidas e tecnologias mais replicáveis.</p></article>
+        </div>
+
+        <div class="flow-highlight reveal" role="img" aria-label="Fluxo: Universidade para Conhecimento para Comunidade para Impacto">
+          <span>Universidade</span><span class="flow-arrow" aria-hidden="true">→</span>
+          <span>Conhecimento</span><span class="flow-arrow" aria-hidden="true">→</span>
+          <span>Comunidade</span><span class="flow-arrow" aria-hidden="true">→</span>
+          <span class="flow-strong">Impacto</span>
+        </div>
+
+        <!-- ODS -->
+        <div class="ods-block reveal">
+          <h3 class="ods-title">Alinhamento aos Objetivos de Desenvolvimento Sustentável (ODS)</h3>
+          <div class="ods-grid">
+            <article class="ods-card ods-3">
+              <span class="ods-num" aria-hidden="true">3</span>
+              <h4>Saúde e Bem-Estar</h4>
+              <p>Reduzir doenças de veiculação hídrica e melhorar a qualidade de vida.</p>
+            </article>
+            <article class="ods-card ods-6">
+              <span class="ods-num" aria-hidden="true">6</span>
+              <h4>Água Potável e Saneamento</h4>
+              <p>Ampliar o acesso a soluções descentralizadas e sustentáveis.</p>
+            </article>
+            <article class="ods-card ods-11">
+              <span class="ods-num" aria-hidden="true">11</span>
+              <h4>Cidades e Comunidades Sustentáveis</h4>
+              <p>Reduzir desigualdades territoriais e fortalecer a resiliência local.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SEÇÃO BIBLIOTECA DIGITAL
+    ========================================================== -->
+    <section class="section" id="biblioteca">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Extensão UFABC</span>
+          <h2>Materiais educativos para download</h2>
+          <p class="section-sub">
+            Repositório de conteúdos para ONGs, educadores e lideranças. Os botões são demonstrativos e podem ser conectados aos arquivos reais do projeto.
+          </p>
+        </header>
+
+    <div class="library-grid" id="libraryGrid">
+
+  <article class="lib-card" data-category="cartilhas">
+    <div class="lib-icon" aria-hidden="true">📘</div>
+    <h3>Cartilha: Banheiro Seco Compostável</h3>
+    <p>Passo a passo ilustrado de construção, uso e manejo responsável.</p>
+
+    <div class="lib-meta">
+      <span class="tag">Cartilha</span>
+      <span class="filetype">PDF</span>
+    </div>
+
+    <a href="cartilha.pdf" download class="btn btn-small"
+       aria-label="Baixar material: Cartilha Banheiro Seco Compostável">
+       Baixar material
+    </a>
+  </article>
+
+  <article class="lib-card" data-category="guias">
+    <div class="lib-icon" aria-hidden="true">🌿</div>
+    <h3>Guia: Tratamento com Moringa</h3>
+    <p>Como preparar o extrato das sementes e os cuidados de validação técnica.</p>
+
+    <div class="lib-meta">
+      <span class="tag">Guia</span>
+      <span class="filetype">PDF</span>
+    </div>
+
+    <a href="moringa.pdf" download class="btn btn-small"
+       aria-label="Baixar material: Guia Tratamento com Moringa">
+       Baixar material
+    </a>
+    </article>
+    </div>
+   </section>
+  </main>
+
+    <!-- =========================================================
+         SEÇÃO CONTATO
+    ========================================================== -->
+    <section class="section section-teal" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-intro reveal">
+          <span class="eyebrow eyebrow--light">Contato</span>
+          <h2>Vamos levar essas soluções mais longe?</h2>
+          <p>
+            Convidamos <strong>ONGs</strong>, <strong>educadores</strong>, <strong>lideranças</strong> e
+            <strong>comunidades</strong> a entrarem em contato para conhecer, aplicar ou divulgar as
+            tecnologias sociais apresentadas aqui.
+          </p>
+          <ul class="contact-info">
+            <li><span aria-hidden="true">✉️</span> <a href="mailto:contato@aluno.ufabc.edu.br">g.pedro@aluno.ufabc.edu.br</a>
+            <li><span aria-hidden="true">🏛️</span> Projeto acadêmico desenvolvido no âmbito da UFABC — Bacharelado em Ciência e Tecnologia.</li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="organizacao">Organização</label>
+            <input type="text" id="organizacao" name="organizacao" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar mensagem</button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       RODAPÉ
+  ========================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <strong>Saneamento Além da Rede</strong>
+        <p>Tecnologias Sociais para Saúde, Sustentabilidade e Transformação Comunitária</p>
+        <p class="footer-ufabc">Universidade Federal do ABC (UFABC) · Bacharelado em Ciência e Tecnologia</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navegação do rodapé">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#problema">O Problema</a></li>
+          <li><a href="#tecnologias">Tecnologias</a></li>
+          <li><a href="#impacto">Impacto Social</a></li>
+          <li><a href="#extensao">Extensão UFABC</a></li>
+          <li><a href="#biblioteca">Biblioteca</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="footer-team">
+        <h3>Equipe</h3>
+        <p>N. M. Cazetta · G. N. Peruzetto · P. G. Santana <em>(créditos editáveis)</em></p>
+        <p class="footer-disclaimer">
+          Conteúdo educativo. A aplicação de tecnologias de saneamento deve considerar normas técnicas,
+          avaliação local e orientação profissional.
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Saneamento Além da Rede · Projeto de Extensão e Divulgação Científica — UFABC.</p>
+    </div>
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo da página" hidden>↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
